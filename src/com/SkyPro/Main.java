@@ -12,10 +12,11 @@ public class Main {
         «Сумма трат за месяц составила … рублей».
          */
         int sumSalary = 0;
+
         int i = 0;
         for (int j : arr) {
             i += 1;
-            sumSalary += j;
+            sumSalary += j * 30; // per month
             if (i != arr.length) {
                 System.out.print(j + ", ");
             } else {
@@ -33,7 +34,7 @@ public class Main {
         и вывести в консоль результат в формате:
         «Минимальная сумма трат за день составила … рублей. Максимальная сумма трат за день составила … рублей».
          */
-        int minSalary = arr[0] + 1;
+        int minSalary = arr[1];
         int maxSalary = arr[0];
 
         for (final int current : arr) {
